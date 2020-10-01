@@ -1,0 +1,6 @@
+def inroder(treenode):
+   if treenode == NULL:
+      return 
+   inorder(treenode->left)
+   print(treenode->val)
+   inorder(treenode->right)
