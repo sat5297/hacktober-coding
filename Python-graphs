@@ -1,0 +1,20 @@
+# For graphs we have in python we have a module name matplotlib
+# This code is for beginner level only
+
+
+from matplotlib import pyplot as plt
+
+list_points = [4,2,9,6,7]
+
+# to polt above point on graphs
+
+plt.plot(list_points) # plot() function is being called from pyplot module
+
+# to label x and y axis of graph
+
+plt.xlabel('Something XYZ for x axis')
+plt.ylabel('Somethings ABC for y axis')
+
+# to show the graph
+
+plt.show() # show() function show the graphs in as GUI (graphical user interface)
