@@ -1,0 +1,13 @@
+def(a,key,n):
+   low = 0
+   high = n-1
+   while low < high:
+     mid = (low+high)/2
+     if a[mid] == key:
+        return true
+     elif a[mid] > key:
+         high = mid-1
+     else:
+         low = mid+1
+   return false
+         
