@@ -1,0 +1,6 @@
+def postoroder(treenode):
+   if treenode == NULL:
+      return 
+   postorder(treenode->left)
+   postorder(treenode->right)
+   print(treenode->val)
