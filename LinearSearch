@@ -1,0 +1,5 @@
+def search(a,key):
+  for i  in a:
+    if i == key:
+       return true
+  return false
