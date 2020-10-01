@@ -1,2 +1,15 @@
-import random n = random.random() print(n)
-import random n = random. randint(0,22) print(n)
+# Calling a specfic function from namespace increses the code effecincy and makes code faster
+from random import randint
+
+# so to generate random integer or number between 0,100
+random_number = radint(0,101) # Remember pyhton excludes the last argument number so to include 100 we will write 101
+
+#printng random number
+print(random_number)
+
+
+# running the code everytime will give a random_number printed
+
+
+
+#HAPPY CODING
