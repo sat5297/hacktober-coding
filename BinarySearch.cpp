@@ -1,22 +1,32 @@
 /*
 Time complexity: O(log n)
-Contributor: Deepanshu Jindal(https://github.com/ultimatecoder2) 
+Contributor: Deepanshu Jindal(https://github.com/ultimatecoder2)
 */
 
 #include<bits/stdc++.h>
 using namespace std;
 
-int BinarySearch(int *arr,int low,int high,int el)
+int BinarySearch(int arr[],int low,int high,int el)
 {
     if(low>high)
-    return -1;
+    {
+        return -1;
+    }
+
     int mid  = (low+high)/2;
-    if(arr[mid]==el)
+    if(arr[mid] == el)
+    {
         return mid;
-    else if(arr[mid]<el)
+    }
+    if(arr[mid]<el)
+    {
         return BinarySearch(arr,mid+1,high,el);
-    else if(arr[mid]<el)
-        return BinarySearch(arr,low,mid-1,el);    
+    }
+    if(arr[mid]>el)
+    {
+        return BinarySearch(arr,low,mid-1,el);
+    }
+
 }
 int main()
 {
@@ -38,6 +48,4 @@ int main()
         cout<<"Element is present at "<<index + 1<<" position"<<endl;
     }
     return 0;
-
-
 }
