@@ -1,0 +1,8 @@
+# Program to find the second largest number in an array
+print("Enter the list")
+a = list(map(int, input().split()))
+a = set(a)
+a = list(a)
+a.sort()
+a.reverse()
+print(a[1])
