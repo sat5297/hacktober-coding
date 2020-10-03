@@ -53,13 +53,13 @@ p.content{
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .col-75 {
   float: left;
   width: 75%;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 label {
