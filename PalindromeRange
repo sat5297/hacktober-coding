@@ -1,0 +1,43 @@
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class PalindromeRange {
+	private static final Set<Integer> PALINDROMIC_NUMBERS = new HashSet<>();
+	private static final Set<Integer> NON_PALINDROMIC_NUMBERS = new HashSet<>();
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int totalTests = scanner.nextInt();
+		int lowerLimit = 0;
+		int upperLimit = 0;
+
+		for (int i = 0; i < totalTests; i++) {
+			lowerLimit = scanner.nextInt();
+			upperLimit = scanner.nextInt();
+			for (int j = lowerLimit; j <= upperLimit; j++) {
+				if (!NON_PALINDROMIC_NUMBERS.contains(j)) {
+					if (PALINDROMIC_NUMBERS.contains(j) || isPalindromicNumber(j)) {
+						System.out.print(j + " ");
+						PALINDROMIC_NUMBERS.add(j);
+					} else {
+						NON_PALINDROMIC_NUMBERS.add(j);
+					}
+				}
+			}
+		}
+		System.out.println();
+	}
+
+	public static boolean isPalindromicNumber(int x) {
+		if (x < 0 || (x % 10 == 0 && x != 0)) {
+			return false;
+		}
+		int revNum = 0;
+		while (revNum < x) {
+			revNum = revNum * 10 + x % 10;
+			x /= 10;
+		}
+		return x == revNum || x == revNum / 10;
+	}
+}
