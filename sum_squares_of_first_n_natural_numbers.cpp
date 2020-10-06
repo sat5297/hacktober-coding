@@ -8,7 +8,7 @@ int main()
     int sum=0;
     for(int i=1;i<n+1;i++)
     {
-        sum = (n*(n+1)*((2*n)+1))/6;    //Mathematical Logic for calculating sum of squares of first n natural numbers.
+        sum += (i*i);    //Mathematical Logic for calculating sum of squares of first n natural numbers.
     }
     cout<<"The sum will be: "<<sum;
     return 0;
