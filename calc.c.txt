@@ -1,0 +1,50 @@
+
+#include<stdio.h>
+
+void main(){
+
+int sum,diff,mul,div;
+
+int a,b; 
+printf("Enter the first number \n");                                                                                    
+scanf("%d",&a);
+printf("Enter the second number \n");
+scanf("%d",&b);
+printf("**************************\n");
+printf("Operations\n");
+printf("**************************\n");
+printf("Addition +\");
+printf("Subtraction -\n");
+printf("Multiplication *\n");
+printf("Division / \n");
+
+printf("Please enter the character corresponding to the operation \n");
+scanf("%c",&c);
+
+switch(c)
+ {
+  case ('+'):
+    sum=a+b;
+    printf("The sum of the numbers is  %d\n",sum);
+    break;
+  case('-'):
+    diff=a-b;
+    printf("The difference of the numbers is %d\n",diff);
+    break;
+  printf("The sum of the numbers is  %d\n",sum);                                                                       >
+   case('*'):
+     mul=a*b;
+     printf("The product of the numbers is %d\n",mul);
+     break;
+
+   case('/'):
+     div=a/b;
+     printf("The quotient of the division is %d \n",div);
+     break;
+
+   default :
+    printf("Please enter the valid character from the list\n");
+    break;
+}
+
+}
