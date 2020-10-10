@@ -5,8 +5,8 @@ using namespace std;
 int main(){
     string s,final;
     int key;
+    cout<<"Please Enter the Key and cipher text For ex '12 Text to encode'"<<endl;
     cin>>key;
-    cout<<"Please Enter the cipher text"<<endl;
     getline(cin, s);
     vector<string> list;
     int m;
