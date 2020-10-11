@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void lexicographicalOrder(int num, int k)
+{
+    if(k>num)
+        return;
+    
+    for(int i=0; i<=9; i++)
+    {
+        if(k<=num)
+        {
+            cout<<k<<endl;
+            k*=10;
+            lexicographicalOrder(num, k);
+            k/=10;
+            k++;
+            if(k%10==0)
+                return;
+        }
+    }
+}
+
+int main(){
+	int n;
+	cout<<"Enter the number - ";
+	cin>>n;
+	lexicographicalOrder(n, 1);
+}
