@@ -1,0 +1,13 @@
+int StringToInt(string s){
+    int ans = 0, i=0;
+    
+    if(s.size()==0) return 0;
+    if(s[0] == '-') i++;
+    
+    for( i; i<s.size(); i++){
+        ans = ans*10 + (s[i]-48);
+    }
+    
+    if(s[0] == '-') ans = ans*(-1);
+    return ans;
+}
