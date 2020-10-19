@@ -1,5 +1,18 @@
 #include <bits/stdc++.h>
- using namespace std;
+/*
+reduce a string in the following way:
+xx reduces to nothing left and xxx changes to x
+
+ps :- just take out characters in pair of 2
+
+for eg: aabbbccccd turns to bd
+
+if the entire string is reduced print Empty string
+
+
+*/
+
+using namespace std;
  int main()
  {
 	 stack <int> a;
