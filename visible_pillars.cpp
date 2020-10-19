@@ -1,5 +1,13 @@
 #include <bits/stdc++.h>
- using namespace std;
+/*
+
+You are standing facing N pillars of different heights with ith pillar having height h[i]. you try to see all the possible pillars.
+you want to know that how many buildings will he be able to see in the range [L, R] both inclusive.
+
+*/
+
+
+using namespace std;
  int main()
  {
 	 int n;
@@ -17,7 +25,7 @@
 		int max = h[l];
 		for(int i = l;i<=r;++i)
 		{
-			if(max<h[i])  //5 2 3 7 9 8 11
+			if(max<h[i])  
 				{
 					max = h[i];
 					count = count+1;
